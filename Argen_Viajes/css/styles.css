@@ -1,0 +1,106 @@
+/* font-family "Nanum Brush Script", cursive */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+.isoTipo {
+  font-family: "Nanum Brush Script", cursive;
+}
+
+.carousel-caption {
+  background-color: rgba(56, 24, 143, 0.504);
+  border-radius: 15px;
+}
+
+.hero {
+  margin-top: 50px;
+}
+
+.subTtl {
+  color: rgb(29, 90, 182)
+}
+
+.main-article {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid lightslategray;
+  border-bottom: 1px solid lightslategray;
+}
+
+#multistep {
+  background-image: url("../assets/brickWall.jpg");
+  background-size: cover;
+
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#multistep form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 3%;
+  height: 550px;
+  background: linear-gradient(130deg, rgba(78, 159, 237, 1) 0%, rgb(175, 214, 230) 43%, rgb(212, 245, 252) 100%);
+  padding: 2rem;
+  box-shadow: 4px 4px 8px;
+}
+
+.footer-container {
+  background-image: url("../assets/brickWall.jpg");
+  background-size: cover;
+  margin-top: 200px;
+}
+
+footer {
+  background: linear-gradient(rgba(0, 0, 0, .6), rgb(0, 0, 0) 70%);
+  min-height: 400px;
+}
+
+footer section {
+  padding: 4rem 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+}
+
+footer a>img {
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 10%;
+
+}
+
+footer a>img,
+footer a>span {
+  transition: all .7s ease-in-out;
+}
+
+footer a>img:hover,
+footer a>span:hover {
+  transform: scale(1.2) rotate(10deg);
+  background: linear-gradient(rgb(250, 21, 235) 0%, rgb(247, 132, 10));
+  -webkit-text-fill-color: transparent;
+  border-radius: 50%;
+}
+
+footer a>span:hover {
+  transform: rotate(10deg);
+  padding: 1rem;
+}
+
+footer a>span:hover {
+  background: linear-gradient(120deg, rgb(135, 241, 13) 0%, rgb(235, 247, 10), rgb(255, 171, 3), rgb(216, 82, 45));
+  background-clip: text;
+  -webkit-background-clip: text;
+}

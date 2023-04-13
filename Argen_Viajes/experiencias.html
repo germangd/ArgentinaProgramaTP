@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+  <link rel="shortcut icon" href="./Imagenes/icon.jpg" type="image/x-icon">
+  <!-- css propio   -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- cargamos el css de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Argen Viajes</title>
+</head>
+<body>
+    <div id="home" class="container">
+        <nav class="navbar navbar-expand-md bg-body-tertiary sticky-sm-top">
+          <div class="container-fluid">
+            <img src="./Imagenes/Logo.jpg" alt="" width="400" class="me-5">
+            <span class="display-5 isoTipo"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#multistep">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#multistep">Experiencias</a>
+                </li>
+              </ul>
+              <div class="ms-sm-5 d-flex column-gap-3">
+                <a href="#" target="_blank" class="text-black opacity-75"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href="#" target="_blank" class="text-black opacity-75"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                <a href="#" target="_blank" class="text-black opacity-75"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    <!-- MULTI STEP FORM -->
+    <div class="container">
+        <h2 class="display-2">Experiencias</h2>
+        <section id="multistep" class="row">
+          <div class="col-sm-10 col-md-8 col-lg-6">
+  
+            <!-- step 1 -->
+            <form id="step1">
+              <fieldset>
+                <legend class="mb-5 text-center">1/3 Comparte con nosotros</legend>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Nombre y Apellido</label>
+                  <input type="text" class="form-control" id="fullName">
+                </div>
+                <div class="mb-3">
+                  <label for="phone">Teléfono</label>
+                  <input type="tel" id="phone" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo electrónico</label>
+                  <input type="email" id="email" class="form-control" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Nunca compartiremos su dirección de email con nadie más.</div>
+                </div>
+              </fieldset>
+              <div>
+                <button id="btn-next-form1" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
+              </div>
+            </form>
+  
+            <!-- step 2 -->
+  
+            <form id="step2" class="d-none">
+              <fieldset>
+                <legend class="mb-5 text-center">2/3 Datos sobre la foto</legend>
+                <div class="mb-3">
+                  <label for="location" class="form-label">¿Dónde fue tu viaje?</label>
+                  <input type="text" id="location" class="form-control" aria-describedby="locationHelp"
+                    placeholder="País, estado o provincia, localidad...">
+                  <div id="locationHelp" class="form-text">Indique la ubicación</div>
+                </div>
+                <div class="mb-3">
+                  <label for="graffitiFile" class="form-label">Subir foto</label>
+                  <input type="file" id="graffitiFile" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="extraInfo">Información adicional</label>
+                  <textarea id="extraInfo" class="form-control" cols="30" rows="5"
+                    placeholder="Incluya cualquier dato extra sobre el grafiti, su ubicación, autores, etc."></textarea>
+                </div>
+              </fieldset>
+              <div>
+                <button id="btn-prev-form2" type="button" class="btn-form btn btn-outline-dark">Anterior</button>
+                <button id="btn-next-form2" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
+              </div>
+            </form>
+            <!-- step 3 -->
+            <form id="step3" class="d-none" >
+              <fieldset>
+                <legend class="mb-5 text-center">3/3 Autorización para usar la foto</legend>
+                <div class="mb-3">
+                  <label for="disclaimer" class="form-label">Permiso de uso</label>
+                  <textarea id="disclaimer" class="form-control" disabled cols="30"
+                    rows="7">Autorizo a la Agencia Argen Viajes, hacer uso del material fotográfico y audiovisual. Las imágenes podrán ser usadas para: Difusión de actividades y eventos a través de la página web, blog y redes sociales de la entidad. Informes, memorias y proyectos de la asociación. Documentos y material gráfico impreso como carteles, folletos y manuales. 
+                    De conformidad con lo establecido en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales
+                </textarea>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" id="check" class="form-check-input">
+                  <label class="form-check-label" for="check">Aceptar condiciones para poder enviar</label>
+                </div>
+              </fieldset>
+              <div>
+                <button id="btn-prev-form3" type="button" class="btn-form btn btn-outline-dark">Anterior</button>
+                <button id="btn-submit" type="submit" class="btn-form btn btn-outline-dark" disabled
+                  data-bs-toggle="modal" data-bs-target="#formModal">Enviar</button>
+  
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+  <!-- carga del JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript -->
+  <script src="./js/index.js"></script>
+  <!-- carga del kit de FontAwesome -->
+  <script src="https://kit.fontawesome.com/76c9ca720a.js" crossorigin="anonymous"></script>
+</body>
+</html>

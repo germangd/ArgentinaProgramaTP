@@ -27,7 +27,7 @@
 }
 
 #multistep {
-  background-image: url("../assets/brickWall.jpg");
+  background-image: url("../Imagenes/fondo.jpg");
   background-size: cover;
 
   height: 1000px;
@@ -48,7 +48,7 @@
 }
 
 .footer-container {
-  background-image: url("../assets/brickWall.jpg");
+  background-image: url("../Imagenes/fondo.jpg");
   background-size: cover;
   margin-top: 200px;
 }

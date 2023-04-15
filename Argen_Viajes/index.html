@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- fuentes extra -->
 
   <!-- favicon -->
   <link rel="shortcut icon" href="./Imagenes/icon.jpg" type="image/x-icon">
@@ -18,6 +17,7 @@
 </head>
 
 <body>
+  
   <div id="home" class="container">
 
     <nav class="navbar navbar-expand-md bg-body-tertiary sticky-sm-top">
@@ -128,7 +128,6 @@
             y disfrutar la energía del sol, hasta descubrir y sorprendernos de toda la aventura 
             que nos regala Bariloche. Date una vuelta por todo lo que Bariloche tiene para que cambies de aire.</p> </h4>
           </figure>
-          
         </div>
 
         <!-- RIGHT COL -->
@@ -182,6 +181,106 @@
         </div>
       </div>
     </div>
+
+    <!-- MULTI STEP FORM CONTACT -->
+    <div class="container">
+      <h2 class="display-2">Contactanos</h2>
+      <section id="multistep" class="row">
+        <div class="col-sm-10 col-md-8 col-lg-6">
+
+          <!-- step 1 -->
+          <form id="step1">
+            <fieldset>
+              <legend class="mb-5 text-center">1/3  Tus datos</legend>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="fullName">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" id="email" class="form-control" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nunca compartiremos su dirección de email con nadie más.</div>
+              </div>
+              
+            </fieldset>
+              <div class="mb-3">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" class="form-control">
+              </div>
+              
+            <div>
+              <button id="btn-next-form1" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
+            </div>
+          </form>
+
+          <!-- step 2 -->
+
+          <form id="step2" class="d-none">
+            <fieldset>
+              <legend class="mb-5 text-center">2/3 ¿Qué viaje querés realizar?</legend>
+              <div class="mb-3">
+                <label for="location" class="form-label">Destino</label>
+                <input type="text" id="location" class="form-control" aria-describedby="locationHelp"
+                  placeholder="País, estado o provincia, localidad...">
+                <div id="locationHelp" class="form-text">Indique la ubicación</div>
+              </div>
+              <div class="mb-3">
+                <label for="infoDate" class="form-label">Fecha</label>
+                <input type="date" id="infoDate" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="extraInfo">¿Cuántos dias querés viajar?</label>
+                <input type="number" id="extraInfo" class="Date">
+              </div>
+            </fieldset>
+            <div>
+              <button id="btn-prev-form2" type="button" class="btn-form btn btn-outline-dark">Anterior</button>
+              <button id="btn-next-form2" type="button" class="btn-form btn btn-outline-dark">Siguiente</button>
+            </div>
+          </form>
+          <!-- step 3 -->
+          <form id="step3" class="d-none">
+            <fieldset>
+              <legend class="mb-5 text-center">3/3 Pedido de presupuesto</legend>
+              <div class="mb-3">
+                <label for="disclaimer" class="form-label">Te contactaremos</label>
+                <textarea id="disclaimer" class="form-control" disabled cols="30"
+                  rows="7">Queremos comunicarnos con vos, para darte la informacion solicitada...</textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" id="check" class="form-check-input">
+                <label class="form-check-label" for="check">Acepta para poder comunicarnos</label>
+              </div>
+            </fieldset>
+            <div>
+              <button id="btn-prev-form3" type="button" class="btn-form btn btn-outline-dark">Anterior</button>
+              <button id="btn-submit" type="submit" class="btn-form btn btn-outline-dark" disabled
+                data-bs-toggle="modal" data-bs-target="#formModal">Enviar</button>
+
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--footer-->
     <div class="container footer-container">
       <footer class="text-white row align-items-baseline">
@@ -223,10 +322,12 @@
             <li>Deportes acuáticos</li>
             <li>Y mas...</li>
           </ul>
+
         </section>
       </footer>
     </div>
   </div>
+
   <!-- carga del JavaScript de Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -235,6 +336,7 @@
   <script src="./js/index.js"></script>
   <!-- carga del kit de FontAwesome -->
   <script src="https://kit.fontawesome.com/76c9ca720a.js" crossorigin="anonymous"></script>
+  
 </body>
 
 </html>
